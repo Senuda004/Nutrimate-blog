@@ -11,8 +11,9 @@ export default function Post({ post }) {
       {post.img && <img className="postImg" src ={PF + post.img} alt=""/>}
       <div className="postInfo">
         <div className="postCats">
-          {post.category.map(c => (
-            <span className="postCat"> {c.name} </span>
+          {/* Check if post.category is an array before using map */}
+          {Array.isArray(post.category) && post.category.map(c => (
+            <span className="postCat" key={c.name}>{c.name}</span>
           ))}
         </div>
         <Link to={`/post/${post._id}`} className="link">
