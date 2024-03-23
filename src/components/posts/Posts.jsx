@@ -3,11 +3,11 @@ import { FaPlus } from 'react-icons/fa'; // Import FaPlus icon from react-icons/
 import Post from "../post/Post";
 import "./posts.css";
 
-export default function Posts({posts}) {
+export default function Posts({ posts }) {
   return (
     <div className="posts">
-      {/* Render blog posts */}
-      {posts.map((p)=>(
+      {/* Check if posts is an array before using map */}
+      {Array.isArray(posts) && posts.map((p) => (
         <Post key={p._id} post={p} />
       ))}
       {/* "Add Post" button */}
