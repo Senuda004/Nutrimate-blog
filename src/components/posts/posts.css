@@ -1,0 +1,74 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  grid-gap: 50px; /* Adjust the gap between grid items */
+  padding: 30px; /* Add padding to the grid */
+  margin: 0; /* Remove margin */
+  margin-top: 30px; /* Add margin top */
+  max-width: 100%; /* Prevent posts from overflowing horizontally */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+
+.categoryButtons {
+  margin-top: -40px; /* Adds space between buttons and posts */
+  margin-right: 10px; /* Adds space between buttons */
+  position:absolute;
+}
+
+.addPostButton {
+  margin-top: 500px;
+  margin-right: 70px;
+  background-color: #FFC533; 
+  border: 2px solid rgb(84, 84, 84);
+  color: rgb(84, 84, 84);
+  padding: 4px 7px;
+  text-align: center;
+  font-size: 27px;
+  cursor: pointer;
+  border-radius: 50px;
+  position: fixed; /* Set position to fixed */
+  top: 20px; /* Adjust top position */
+  right: 20px; /* Adjust right position */
+  z-index: 1000; /* Set z-index to ensure it appears above other content */
+}
+
+.post {
+  margin-top: 50px;
+  margin-bottom: 5px; /* Adds space between posts */
+  border: 1px solid #ccc; /* Adds a border around each post */
+  padding: 0px; /* Adds padding inside each post */
+  width: 400px; /* Adjusts the width of the posts */
+  min-height: 500px;
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 5px; /* Add margin to the top and bottom, and 0 margin to the left and right */
+}
+
+.postImg:hover {
+  opacity: 0.9; /* Adjust the opacity value as needed */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 800px) {
+    .posts {
+      display: flex;
+      flex-wrap: wrap; /* Allow posts to wrap to the next line */
+      justify-content: center; /* Center the posts horizontally */
+    }
+  
+    .post {
+      flex: 1 1 200px; /* Make posts display inline with a fixed width of 200px */
+      margin: 10px; /* Add margin between posts */
+      min-width: 300px;
+    }
+    .addPostButton {
+      margin-top: 700px;
+      margin-right: 30px;
+    }
+  }

@@ -1,0 +1,19 @@
+.blogHead {
+    background-color: #FFC533;
+    height: auto;
+    padding-top: 80px;
+    margin-top: -8px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-image: url('https://i.ibb.co/JrrsJ5v/Icons-Header2.png');
+    background-repeat: repeat;
+    background-position: center center, top left, top right, top right corner;
+    background-size: contain;
+}
+
+.blogHead span {
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 24px; /* Adjust as needed */
+    white-space: pre;
+}

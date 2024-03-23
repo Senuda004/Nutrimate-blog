@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.singlePost {
+  flex: 9;
+  animation: slideUp 0.5s ease-in-out; /* Apply slide-up animation */
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Start position below */
+  }
+  100% {
+    opacity: 1; /* End with full opacity */
+    transform: translateY(0); /* End position at the top */
+  }
+}
+
+.singlePostWrapper {
+  padding: 8px;
+  padding-right: 5px; /* Add a value to the right padding */
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePostImg {
+  width: 100%;
+  max-height: 300px; /* Set a maximum height for the image */
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Poppins';
+}
+
+.singlePostTitleInput{
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Poppins';
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.singlePostTitleInput:focus{
+  outline: none;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: teal;
+}
+
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow the info section to wrap on smaller screens */
+  justify-content: space-between;
+  font-size: 16px;
+  color: #be9656;
+  font-family: 'Poppins';
+  margin: 20px;
+}
+
+.singlePostAuthor {
+  margin-left: 5px;
+}
+
+.singlePostDesc {
+  color: #666;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify; /* Justify the text */
+  word-wrap: break-word; /* Break long words */
+  margin-top: 10px;
+  font-family: 'Poppins';
+  margin: 20px;
+}
+
+h1 {
+  font-family: "Poppins";
+}
+
+
+.singlePostDescInput{
+  color: #666;
+  font-size: 16px;
+  line-height: 25px;
+  border: none;
+
+}
+
+.singlePostDescInput:focus{
+  outline: none;
+}
+
+
+.singlePostButton{
+  border: none;
+  background-color:#FFBF00 ;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 20px;
+  
+}
